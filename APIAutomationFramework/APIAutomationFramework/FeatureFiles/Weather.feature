@@ -1,8 +1,8 @@
 ﻿Feature: Weather
 
-Scenario Outline: Current weather for different cities across the world
+Scenario Outline: Verify location data returned from Current Weather Endpoint
 	Given I run the weather api for city : '<city>'
-	Then I verify that the api is run successfully
+	Then I verify that the api has run successfully
 	Then I verify the location values returned : '<name>','<country>','<region>'
 
 	Examples:

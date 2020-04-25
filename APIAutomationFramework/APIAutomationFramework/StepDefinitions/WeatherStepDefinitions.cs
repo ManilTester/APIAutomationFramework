@@ -25,7 +25,7 @@ namespace APIAutomationFramework.StepDefinitions
         }
 
 
-        [Then(@"I verify that the api is run successfully")]
+        [Then(@"I verify that the api has run successfully")]
         public void ThenIVerifyThatTheApiIsRunSuccessfully()
         {
             Assert.IsTrue(_context.CurrentWeather.IsSuccessful,
